@@ -29,8 +29,8 @@ stage_id INT,
 venue_id INT,
 team1_id INT,
 team2_id INT,
-team1_goal INT,
-team2_goal INT,
+team1_goal NUMERIC,
+team2_goal NUMERIC,
 notes VARCHAR(100)
 );
 
