@@ -1,14 +1,15 @@
 CREATE TABLE teams (
-id SERIAL NOT NULL PRIMARY KEY,
+id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 team_short_name VARCHAR(3),
 name VARCHAR(100),
-match_group VARCHAR(1)
+match_group VARCHAR(1),
 );
 
 CREATE TABLE venues (
-id SERIAL NOT NULL PRIMARY KEY,
+id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 name VARCHAR(50),
 city VARCHAR (50),
+country VARCHAR (50),
 capacity INT
 );
 
@@ -34,7 +35,7 @@ notes VARCHAR(100)
 );
 
 CREATE TABLE stages (
-id SERIAL NOT NULL PRIMARY KEY,
+id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 name VARCHAR(15),
 start_date DATE,
 end_date DATE
